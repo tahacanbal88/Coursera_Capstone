@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1254"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.1.4.2 (Windows)"/>
+	<meta name="created" content="2019-07-29T02:11:49.022000000"/>
+	<meta name="changed" content="2019-07-29T02:37:10.345000000"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 115%; background: transparent }
+		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "NSimSun"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Arial"; font-size: 24pt; font-weight: bold }
+	</style>
+</head>
+<body lang="tr-TR" link="#000080" vlink="#800000" dir="ltr"><h1 class="western" align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#111111"><font face="Libre Baskerville, serif"><font size="5" style="font-size: 18pt">Most
+Dog Friendly Neighbourhoods in Toronto</font></font></font></h1>
+<ol>
+	<p align="center" style="margin-top: 0.11cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
+	<font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 18pt">Business
+	Problem:</font></font></p>
+	<p style="margin-bottom: 0cm; line-height: 100%">Having a dog is a
+	serious responsibility and it definitely alters your lifestyle <span style="font-variant: normal"><font color="#111111"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">in
+	order to provide the proper care for your pup. Even the smallest
+	dogs should be going outside and it makes life easier for dog owners
+	if their neighbourhood caters to that. They are as important as any
+	other member of a family and keeping them happy and healthy is
+	something all good dog owners strive to do. This translates into
+	living in neighbourhoods that has a lot of parks and trails so your
+	pup can get out and explore.</span></span></span></font></font></font></span><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt">
+	</font></font>
+	</p>
+	<p style="margin-bottom: 0cm; line-height: 100%"></p>
+	<p style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt">With
+	this project we had to use Foursquare API to solve a problem and I
+	wondered where in Toronto would be good place to live with a dog?</font></font><span style="font-variant: normal"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">For
+	this analysis, I assumed that good target areas would have a large
+	population, a large number of pets registered in the area and
+	</span></span></span></font></font></span><span style="font-variant: normal"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">parks/dog
+	run places.</span></span></span></font></font></span></p>
+	<p style="margin-bottom: 0cm; line-height: 100%"></p>
+	<p style="margin-bottom: 0cm; line-height: 100%">To do this
+	analysis, we will use the following information:</p>
+	<p style="margin-bottom: 0cm; line-height: 100%"></p>
+</ol>
+<ul>
+	<li><p style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">the
+	number of pets in each area in Toronto (using Forward Sortatation
+	Areas (FSAs)) (estimated by the number of new dog/cat licenses
+	issued per FSA)</span></span></span></font></span> </font></font>
+	</p>
+	<li><p style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">the
+	neighbourhood name of each FSA (retrieved from Wikipedia)</span></span></span></font></span>
+	</font></font>
+	</p>
+	<li><p style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">the
+	population of each each FSA from the 2016 census</span></span></span></font></span>
+	</font></font>
+	</p>
+	<li><p style="margin-bottom: 0cm; line-height: 100%"><span style="font-variant: normal"><font color="#24292e"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">the
+	foursquare api to retrieve the current number of pet stores/services
+	and dog-runs per FS</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#24292e"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">A</span></span></span></font></font></font></span></p>
+</ul>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p align="center" style="margin-top: 0.11cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
+<font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 18pt">Data
+Sources:</font></font></p>
+<ul>
+	<li><p><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Population
+	by FSA from Census 2016:
+	https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/hlt-fst/pd-pl/comprehensive.cfm</span></span></span></font></span>
+	</font></font>
+	</p>
+	<ul>
+		<li><p><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">this
+		information will be used to calculate the proportion of pet
+		ownership per FSA</span></span></span></font></span> </font></font>
+		</p>
+		<li><p><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">this
+		data set has 3 columns of interest: FSA / Province / Population,
+		2016</span></span></span></font></span> </font></font>
+		</p>
+		<li><p><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">We
+		will filter this data set to only include the FSAs located in
+		Toronto</span></span></span></font></span> </font></font>
+		</p>
+	</ul>
+	<li><p><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Toronto
+	Open Data: Licensed Dogs and Cats Reports for 2013 and 2017
+	https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/community-services/#a666d03a-bafe-943a-e256-3c2d14b07b10</span></span></span></font></span>
+	</font></font>
+	</p>
+	<ul>
+		<li><p><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">this
+		information includes the number of dog and cat licenses issued per
+		FSA in 2017. Also planning ot look at same file for 2013 to look at
+		which areas are experiencing growth in pet ownership</span></span></span></font></span>
+		</font></font>
+		</p>
+		<li><p><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">this
+		data has four columns: FSA / # Cat Licenses Issued / # Dog Licenses
+		Issued / Total Licenses</span></span></span></font></span> </font></font>
+		</p>
+	</ul>
+	<li><p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+	<font color="#24292e"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt">FourSquare
+	Api: </font></font></font>
+	</p>
+	<ul>
+		<li><p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+		<font color="#24292e"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt">to
+		get number of pet stores/services and Dog-Runs per FSA </font></font></font>
+		</p>
+		<li><p><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">specifically,
+		this query will be filtered to look for only the following two
+		categoryIds: </span></span></span></font></span><span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">5032897c91d4c4b30a586d69=pet
+		services</span></span></span></font></span> ,
+		<span style="font-variant: normal"><font color="#24292e"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">4bf58dd8d48988d100951735=
+		pet stores</span></span></span></font></span> ,
+		4bf58dd8d48988d1e5941735= dog-run</font></font></p>
+	</ul>
+	<li><p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+	<font color="#24292e"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt">geopy:
+	</font></font></font>
+	</p>
+	<ul>
+		<li><p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+		<font color="#24292e"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt">to
+		get lat/long coordinates for each FSA, which is used when calling
+		Foursquare API for each FSA </font></font></font>
+		</p>
+	</ul>
+	<li><p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+	<font color="#24292e"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt">Wikipedia:
+	https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M </font></font></font>
+	</p>
+	<ul>
+		<li><p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+		<font color="#24292e"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt">to
+		get neighbourhood names for each FSA </font></font></font>
+		</p>
+	</ul>
+</ul>
+</body>
+</html>
